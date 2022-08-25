@@ -1,0 +1,187 @@
+/* components/sideBar/sideBar.wxss */
+.si-bg1{
+/* 矩形 4 */
+position: absolute;
+width: 171px;
+height: 812px;
+top: 0;
+left: 0;
+background: rgb(221, 249, 247);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 0px 20px 20px 0px;
+z-index: 4;
+}
+.si-img1{
+  /* Ellipse 34 */
+position: absolute;
+width: 70px;
+height: 70px;
+top: 60px;
+border-radius: 50%;
+left: 30px;
+background-color: white;
+}
+.si-t1{
+/* 机场 */
+position: absolute;
+width: 108px;
+height: 26px;
+top: 179px;
+left: 34px;
+color: rgb(27, 27, 29);
+font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.si-t2{
+  /* 机场 */
+position: absolute;
+width: 108px;
+height: 26px;
+top: 209px;
+left: 34px;
+color: rgb(27, 27, 29);
+font-size: 12px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.si-t3{
+  /* 诚信分98 */
+position: absolute;
+width: 58px;
+height: 26px;
+top: 235px;
+left: 34px;
+color: rgb(5, 191, 171);
+font-size: 10px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.si-t4{
+  /* 机场 */
+position: absolute;
+width: 108px;
+height: 26px;
+top: 275px;
+left: 53px;
+color: rgb(27, 27, 29);
+font-size: 12px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.si-t5{
+  /* 机场 */
+position: absolute;
+width: 108px;
+height: 26px;
+top: 317px;
+left: 52px;
+color: rgb(27, 27, 29);
+font-size: 12px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.si-img2{
+  /* path */
+position: absolute;
+width: 11.98px;
+height: 11.98px;
+top: 282px;
+left: 30px;
+}
+.si-img3{
+/* path */
+position: absolute;
+width: 11.98px;
+height: 11.98px;
+top: 324px;
+left: 30px;
+}
+.si-bg2{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index:10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.si-bg3{
+  /* 矩形 9 */
+  position: absolute;
+  width: 270px;
+  height: 328px;
+  top: 251px;
+  left: 47px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  z-index: 11;
+}
+.si-but{
+  /* 矩形 6 */
+position: absolute;
+width: 126px;
+height: 38px;
+top: 250px;
+left: 76px;
+background: rgb(5, 191, 171);
+border-radius: 30px;
+/* 确定 */
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 10px;
+padding-left: 25px;
+text-align: center;
+}
+.si-up{
+  position: absolute;
+  left: 95px;
+  top: 60px;
+}
+.myup{
+  /* 矩形 10 */
+position: absolute;
+width: 146px;
+height: 146px;
+left: -30px;
+top: -20px;
+background: rgb(229, 229, 229);
+border-radius: 73px;
+}
+.si-bgi{
+  /* 矩形 10 */
+position: absolute;
+width: 146px;
+height: 146px;
+top: -30px;
+left: -27px;
+background: rgb(229, 229, 229);
+border-radius: 73px;
+}
+.tui{
+  /* 机场 */
+position: absolute;
+width: 108px;
+height: 26px;
+top: 710px;
+left: 31px;
+color: rgb(5, 191, 171);
+font-size: 16px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}

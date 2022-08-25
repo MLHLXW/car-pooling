@@ -1,0 +1,209 @@
+/* components/tc/tc.wxss */
+.ax-image{
+  position: fixed;
+  z-index: 99999;
+  width: 150rpx;	
+  bottom: 27rpx;
+  left: 300rpx;
+}
+
+.bg{
+  position: fixed;
+  z-index: 99998;
+  width: 750rpx;
+  height: 1000rpx;
+  bottom: 100rpx;
+  background-color:  rgb(221, 249, 247);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.myclose{
+  width: 15px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.xl1{
+  position: absolute;
+  top: 50px;
+  width: 120px;
+  left: 170px;
+  --dropdown-menu-height: 30px;
+}
+
+.xl2{
+  position: absolute;
+  top: 90px;
+  width: 120px;
+  left: 170px;
+  --dropdown-menu-height: 30px;
+}
+
+.circle1{
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: 155px;
+  top: 50px;
+}
+.circle2{
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: 275px;
+  top: 50px;
+}
+.circle3{
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: 155px;
+  top: 90px;
+}
+.circle4{
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: 275px;
+  top: 90px;
+}
+
+.t1{
+  font-weight: bolder;
+  line-height: 30px;
+  position: absolute;
+  left: 80px;
+  top: 50px;
+}
+
+.t2{
+  font-weight: bolder;
+  line-height: 30px;
+  position: absolute;
+  left: 80px;
+  top: 90px;
+}
+
+.t3{
+  font-weight: bolder;
+  line-height: 30px;
+  position: absolute;
+  left: 50px;
+  top: 150px;
+}
+
+.t4{
+  font-weight: bolder;
+  line-height: 30px;
+  position: absolute;
+  left: 50px;
+  top: 190px;
+}
+.f1{
+  position: absolute;
+  border-radius: 10px;
+  top: 150px;
+  width: 180px;
+  left: 170px;
+  font-size: 15px;
+  height: 30px;
+  background-color: white;
+  padding-left: 30rpx ;
+}
+.f2{
+  position: absolute;
+  border-radius: 10px;
+  top: 190px;
+  width: 60px;
+  left: 170px;
+  font-size: 15px;
+  background-color: white;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  --dropdown-menu-height: 30px;
+}
+
+.t5{
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  width: 100px;
+  top: 250px;
+  left: 50px;
+}
+
+.f3{
+  position: absolute;
+  border-radius: 10px;
+  top: 250px;
+  width: 60px;
+  left: 170px;
+  height: 30px;
+  font-size: 15px;
+  background-color: white;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  --dropdown-menu-height: 30px;
+}
+
+.t6{
+  position: absolute;
+  width: 100px;
+  top: 253px;
+  left: 270px;
+}
+
+.t7{
+  position: absolute;
+  font-weight: bold;
+  top: 303px;
+  left: 50px;
+}
+
+.f4{
+  position: absolute;
+  top: 343px;
+  left: 65px;
+  width: 240px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20rpx;
+}
+
+.b1{
+  position: absolute;
+  width: 250px;
+  height: 40px;
+  align-content: center;
+  border-radius: 15px;
+  letter-spacing: 20px;
+  padding-left: 40px;
+  background-color: rgb(5, 191, 171)!important;
+  left: 70px;
+  bottom: 20px;
+}
+.mop{
+  position: absolute;
+  width: 5px;
+  height: 22px;
+  left: 120px;
+  top: 155px;
+  text-align: right;
+  padding-right: 22px;
+  line-height: 22px;
+}
+
+
+
+
+

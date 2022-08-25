@@ -1,0 +1,141 @@
+/* components/clock/clock.wxss */
+.cl-bg1{
+  /* 矩形 2 */
+position: relative;
+width: 167px;
+height: 56px;
+background: rgb(255, 255, 255);
+border-radius: 20px 0px 0px 20px;
+margin-bottom: 10px;
+}
+.c-v1{
+  /* Ellipse 34 */
+position: absolute;
+width: 27.75px;
+height: 27.63px;
+top: 5px;
+left: 20px;
+background: rgb(229, 229, 229);
+border-radius: 50%;
+}
+.c-v2{
+  /* Ellipse 34 */
+position: absolute;
+width: 27.75px;
+height: 27.63px;
+top: 5px;
+left: 55px;
+background: rgb(229, 229, 229);
+border-radius: 50%;
+}
+.c-v3{
+  /* Ellipse 34 */
+position: absolute;
+width: 27.75px;
+height: 27.63px;
+top: 5px;
+left: 90px;
+background: rgb(229, 229, 229);
+border-radius: 50%;
+}
+.c-v4{
+  /* Ellipse 34 */
+position: absolute;
+width: 27.75px;
+height: 27.63px;
+top: 5px;
+left: 125px;
+background: rgb(229, 229, 229);
+border-radius: 50%;
+}
+.c-t1{
+  /* 倒计时10：00 */
+position: absolute;
+width: 200px;
+height: 28px;
+top: 35px;
+left: 15px;
+color: rgb(5, 41, 60);
+font-size: 10px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.c-img{
+  width: 27.75px;
+  height: 27.63px;
+  border-radius: 50%;
+  background-color: white;
+}
+.c-t2{
+  /* 倒计时10：00 */
+position: absolute;
+width: 200px;
+height: 28px;
+top: 35px;
+left: 80px;
+color: rgb(151, 151, 151);
+font-size: 10px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.c-t3{
+  /* 倒计时10：00 */
+position: absolute;
+width: 200px;
+height: 28px;
+top: 35px;
+left: 30px;
+color: rgb(151, 151, 151);
+font-size: 10px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.c-t4{
+  /* 倒计时10：00 */
+position: absolute;
+width: 200px;
+height: 28px;
+top: 35px;
+left: 90px;
+color: red;
+font-size: 10px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.c-tx{
+  /* 倒计时10：00 */
+position: absolute;
+width: 200px;
+height: 28px;
+top: 35px;
+left: 137px;
+color: rgb(10, 202, 181);
+font-size: 10px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+display: flex;
+flex-direction: row;
+align-items: center;
+}

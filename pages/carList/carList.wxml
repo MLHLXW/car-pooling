@@ -1,0 +1,43 @@
+<!--pages/carList/carList.wxml-->
+<view>
+  <van-search
+      value="{{ destination }}"
+      shape="round"
+      background="transparent"
+      placeholder="搜索目的地"
+      bind:change="onChange"
+      bind:search="mySearch"
+      class="a-search"
+    ></van-search>
+  <view wx:if="{{id == '机场'}}" class="car-bg1">
+    <image src="../../images/plane.png" class="car-img1"></image>
+  </view>
+  <view wx:if="{{id == '车站'}}" class="car-cbg2">
+    <image src="../../images/station.png" class="car-img1"></image>
+  </view>
+  <view wx:if="{{id == '医院'}}" class="car-cbg3">
+    <image src="../../images/hos.png" class="car-img1"></image>
+  </view>
+  <view wx:if="{{id == '公园'}}" class="car-cbg4">
+    <image src="../../images/park.png" class="car-img1"></image>
+  </view>
+  <view wx:if="{{id == '大学'}}" class="car-cbg5">
+    <image src="../../images/school.png" class="car-cimg"></image>
+  </view>
+  <view>
+    <text class="car-t1">{{name}}</text>
+    <view class="car-bg2" wx:for="{{list}}" wx:key="index">
+      <view class="car-bg3">
+        <view class="d-v1"><image class="d-img2" src="{{item.headPortraits[0]}}" wx:if="{{item.people_number >= 1}}"></image></view>
+        <view class="d-v2"><image class="d-img2" src="{{item.headPortraits[1]}}" wx:if="{{item.people_number >= 2}}"></image></view>
+        <view class="d-v3"><image class="d-img2" src="{{item.headPortraits[2]}}" wx:if="{{item.people_number >= 3}}"></image></view>
+        <view class="d-v4"><image class="d-img2" src="{{item.headPortraits[3]}}" wx:if="{{item.people_number == 4}}"></image></view>
+      </view>
+      <view class="car-bg4">
+        <navigator class="rout" url="/pages/detail/detail?id={{item.id}}">详情</navigator>
+        <text class="car-t2">起点: {{item.origin}}</text>
+        <text class="car-t3">截止时间: {{item.deadline}}</text>
+      </view>
+    </view>
+  </view>
+</view>

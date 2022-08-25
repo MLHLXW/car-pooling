@@ -1,0 +1,31 @@
+<!--pages/a-index/a-index.wxml-->
+<view class="a-i-bg">
+
+  <van-search
+      value="{{ place }}"
+      shape="round"
+      background="transparent"
+      placeholder="搜索目的地"
+      bind:change="onChange"
+      bind:search="mySearch"
+      class="a-search"
+    ></van-search>
+
+  <view class="a-p-2">
+    <block wx:for="{{list2}}" wx:key="index">
+      <view class="{{destination == item ? 'a-l-2' : 'a-l-3' }}" bindtap="tp1" data-info="{{item}}">{{item}}</view>
+    </block>
+  </view>
+
+    <view class="a-position">
+      <block wx:for="{{list}}" wx:key="index" class="a-position"> 
+        <show 
+        wx:if="{{item.count != 0 && (destination=='全部'||destination==item.category)}}" 
+        count="{{item.count}}" destination="{{item.place}}" catogry="{{item.category}}"
+        bindtap="goto" data-id="{{item.category}}" data-name="{{item.place}}"></show>
+      </block>
+    </view>
+</view>
+<view>
+    <tc></tc>
+</view>

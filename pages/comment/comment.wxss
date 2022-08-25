@@ -1,0 +1,7 @@
+/* pages/comment/comment.wxss */
+.cp-1{
+  position: absolute;
+  top: 170px;
+  left: 100px;
+}
+

@@ -1,0 +1,13 @@
+<!--pages/a-fail/a-fail.wxml-->
+<view>
+  <text class="suc-t1">{{begin}}</text>
+  <image src="../../images/right.png" class="suc-img1"></image>
+  <text class="suc-t2">{{end}}</text>
+  <text class="suc-t3">截止时间：{{deadline}}</text>
+  <text class="suc-t4">拼车失败</text>
+  <view class="af-bg1">
+    <text class="af-t1">很遗憾\n人数没有满呢</text>
+    <image src="../../images/sad.png" class="af-img1"></image>
+    <button class="af-but" bindtap="send">确定</button>
+  </view>
+</view>

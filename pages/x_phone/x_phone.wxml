@@ -1,0 +1,14 @@
+<!--pages/x_phone/x_phone.wxml-->
+<view class="bgs">
+    <text class="p-t1">修改手机号</text>
+    <image class="p-img" src="../../images/car.png"></image>
+    <view class="p-v1"> 
+      <text class="p-t3">手机号</text>
+      <input class="p-i2" bindinput="inputph"/>
+      <text class="p-t4">验证码</text>
+      <input class="p-i3" bindinput="inputyz"/>
+      <button class="p-button1" bindtap="send">发送验证码</button>
+    </view>
+    <button class="p-button2" bindtap="bendphone">绑定</button>
+</view>
+

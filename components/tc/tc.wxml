@@ -1,0 +1,65 @@
+<!--components/tc/tc.wxml-->
+<view>
+  <view class="bg" wx:if="{{!myon}}">
+    <image 
+      src="../../images/close.png" 
+      class="myclose" 
+      mode="widthFix" 
+      bindtap="beton">
+    </image>
+    <view class="circle1"></view>
+    <view class="circle2"></view>
+    <view class="circle3"></view>
+    <view class="circle4"></view>
+    <text class="t1" class="t1">起点</text>
+    <text class="t2" class="t2">终点</text>
+    <van-dropdown-menu class="xl1" >
+      <van-dropdown-item
+        value="{{ value1 }}"
+        bind:change="onChange1" 
+        options="{{ option1 }}"
+        />
+    </van-dropdown-menu>
+    <van-dropdown-menu class="xl2">
+      <van-dropdown-item 
+        value="{{ value2 }}" 
+        bind:change="onChange2" 
+        options="{{ option2 }}" />
+    </van-dropdown-menu>
+
+    <text class="t3">截止时间</text>
+    <text class="t4">需要拼车人数</text>
+    <view class="f1">{{currentChoose}}</view>
+    <button bind:tap="openPicker" class="mop">↓</button>
+      <van-action-sheet show="{{ show }}" bind:close="onClose" bind:getuserinfo="onGetUserInfo">
+      <van-datetime-picker type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:cancel="onCancel"
+      bind:confirm="onConfirm" />
+      </van-action-sheet> 
+
+      <van-dropdown-menu class="f2">
+      <van-dropdown-item 
+        value="{{ value3 }}" 
+        bind:change="onChange3" 
+        options="{{ option3 }}" />
+      </van-dropdown-menu>
+
+    <text class="t5">是否筛选乘车人诚信分(筛选不利于快速拼车)</text>
+    <van-dropdown-menu class="f3">
+      <van-dropdown-item 
+        value="{{ value4 }}" 
+        bind:change="onChange4" 
+        options="{{ option4 }}" />
+      </van-dropdown-menu>
+    <text class="t6">以上</text>
+
+    <text class="t7">添加备注 (集合地点)</text>
+    <textarea class="f4" bindinput="input4"/>
+    <button class="b1" bindtap="" type="primary" bindtap="send">发起拼车</button>
+  </view>
+  <image 
+    class="ax-image" 
+    mode="widthFix" 
+    src="../../images/ax.png"
+    bindtap="beton" wx:if="{{myon}}">
+  </image>
+</view>

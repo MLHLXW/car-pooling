@@ -1,0 +1,133 @@
+/* components/amotion/amotion.wxss */
+.sp{
+  animation-delay: 2s;
+  z-index: 4;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  /* 绝对定位 居中 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  /* 设置各个方向的阴影 */
+  /* 通过var函数调用自定义属性--c,设置阴影颜色 */
+  box-shadow: 0 -160px 0 rgb(41, 228, 140),
+  0 160px 0 rgb(41, 228, 140),
+  -160px 0 0 rgb(41, 228, 140),
+  160px 0 0 rgb(41, 228, 140),
+  -120px -120px 0 rgb(41, 228, 140),
+  120px -120px 0 rgb(41, 228, 140),
+  120px 120px 0 rgb(41, 228, 140),
+  -120px 120px 0 rgb(41, 228, 140);
+}
+
+@keyframes blin{
+    0%{
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0.8;
+    }
+    50%{
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 1;
+    }
+    100%{
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }
+}
+
+.outside{
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.circle{
+  height: 100%;
+  box-sizing: border-box;
+  border: 5px solid rgb(41, 228, 140);
+  border-radius: 50%;
+  /*animation: 2s hid linear forwards;*/
+  animation-delay: 10s;
+}
+
+.circle:before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  top: 50%;
+  left: 0;
+  border: 5px solid rgb(41, 228, 140);
+  border-top: transparent;
+  border-radius:  0 0 50% 50%/ 0 0 100% 100%;
+  z-index: 2;
+  }
+  .top, .bottom{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background: white;
+    }
+    .top{
+    top: 0;
+    z-index: 1;
+    transform-origin: center bottom;
+    }
+    .bottom{
+    z-index: 3;
+    top: 50%;
+    transform-origin: center top;
+    }
+    @keyframes front-half{
+      0%{
+      transform: rotate( 0 );
+      }
+      99%{
+      transform: rotate( 180deg );
+      opacity: 1;
+      }
+      100%{
+      transform: rotate( 180deg );
+      opacity: 0;
+      }
+    }
+    @keyframes back-half{
+      0%{
+      transform: rotate( 0 );
+      }
+      99%{
+      transform: rotate( 180deg );
+      opacity: 1;
+      }
+      100%{
+      transform: rotate( 180deg );
+      opacity: 0;
+      }
+    }
+    @keyframes hid{
+      0%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+.like-img{
+  width: 70px;
+  height: 70px;
+  z-index: 7;
+}
+.on-p{
+  position: absolute;
+  top: 28px;
+  left: 25px;
+  z-index: 6;
+}

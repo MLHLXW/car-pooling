@@ -1,0 +1,205 @@
+page{
+  background-color: rgb(221, 249, 247);  
+}
+.a-search{
+  /* Rectangle 38 */
+position: absolute;
+width: 247px;
+height: 42px;
+top: 29px;
+left: 23px;
+border-radius: 50px;
+}
+.car-bg1{
+  /* Rectangle 37 */
+position: absolute;
+width: 398px;
+height: 160px;
+top: 103px;
+left: -12px;
+background: rgb(254, 246, 218);
+backdrop-filter: blur(4px);
+border-radius: 20px;
+}
+.car-cbg2{
+  /* Rectangle 37 */
+position: absolute;
+width: 398px;
+height: 160px;
+top: 103px;
+left: -12px;
+background: rgb(250, 190, 242);
+backdrop-filter: blur(4px);
+border-radius: 20px;
+}
+.car-cbg3{
+  /* Rectangle 37 */
+position: absolute;
+width: 398px;
+height: 160px;
+top: 103px;
+left: -12px;
+background: rgb(255, 233, 224);
+backdrop-filter: blur(4px);
+border-radius: 20px;
+}
+.car-cbg4{
+  /* Rectangle 37 */
+position: absolute;
+width: 398px;
+height: 160px;
+top: 103px;
+left: -12px;
+background: rgb(192, 244, 239);
+backdrop-filter: blur(4px);
+border-radius: 20px;
+}
+.car-cbg5{
+  /* Rectangle 37 */
+position: absolute;
+width: 398px;
+height: 160px;
+top: 103px;
+left: -12px;
+background: rgb(120, 240, 184);
+backdrop-filter: blur(4px);
+border-radius: 20px;
+}
+.car-cimg{
+  position: absolute;
+  width: 140px;
+  height: 100px;
+  left: 130px;
+  top: 24px;
+}
+.car-img1{
+  position: absolute;
+  width: 140px;
+  height: 120px;
+  left: 130px;
+  top: 24px;
+}
+.car-t1{
+  /* 机场 */
+position: absolute;
+width: 173.22px;
+height: 34.43px;
+top: 288px;
+left: 23px;
+color: rgb(27, 27, 29);
+font-size: 24px;
+font-weight: 550;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.car-bg2{
+  position: relative;
+  top: 343px;
+}
+.car-bg3{
+  /* 矩形 2 */
+position: absolute;
+width: 320px;
+height: 93px;
+left: 25px;
+background: rgb(255, 255, 255);
+border-radius: 20px;
+}
+.car-bg4{
+  /* 矩形 2 */
+position: absolute;
+width: 321px;
+height: 77px;
+top: 93px;
+left: 24px;
+background: rgb(255, 255, 255);
+border-radius: 20px;
+}
+.d-v1{
+  position: absolute;
+  width: 50.18px; 
+  height: 50px; 
+  top: 19px; 
+  left : 39px; 
+  Fill : Solid ;
+  border-radius: 50%;
+  background:rgb(229, 229, 229); 
+}
+.d-v2{
+  position: absolute;
+  width: 50.18px; 
+  height: 50px; 
+  top: 19px; 
+  left : 103px; 
+  Fill : Solid ;
+  border-radius: 50%;
+  background:rgb(229, 229, 229); 
+}
+.d-v3{
+  position: absolute;
+  width: 50.18px; 
+  height: 50px; 
+  top: 19px; 
+  left : 166.49px; 
+  Fill : Solid ;
+  border-radius: 50%;
+  background:rgb(229, 229, 229); 
+}
+.d-v4{
+  position: absolute;
+  width: 50.18px; 
+  height: 50px; 
+  top: 19px; 
+  left : 224.82px;
+  Fill : Solid ;
+  border-radius: 50%;
+  background:rgb(229, 229, 229); 
+}
+.d-img2{
+  width: 50.18px; 
+  height: 50px; 
+  border-radius: 50%;
+  background-color: white;
+}
+.car-t2{
+  /* 起点：福大北门 */
+position: absolute;
+width: 98px;
+height: 28px;
+top: 15px;
+left: 50px;
+color: rgb(5, 41, 60);
+font-size: 14px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.car-t3{
+/* 截止时间：8:00 7/22/2022 */
+position: absolute;
+width: 269px;
+height: 28px;
+top: 43px;
+left: 50px;
+color: rgb(5, 41, 60);
+font-size: 14px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.rout{
+  position: absolute;
+  left: 265px;
+  top: 20px;
+  font-size: 12px;
+  color: rgb(34, 145, 43);
+}

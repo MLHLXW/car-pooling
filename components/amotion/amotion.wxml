@@ -1,0 +1,10 @@
+<!--components/amotion/amotion.wxml-->
+<view>
+  <view class="outside">
+    <view class="circle"></view>
+    <view class="top" style="animation: {{ac1}}"></view>
+    <view class="bottom" style="animation: {{ac2}}"></view>
+    <view class="sp" style="animation: {{ac3}}; animation-delay: 2s"></view>
+  </view>
+  <view bindtap="onLike" class="on-p"><image src="{{like?like1:like2}}" class="like-img" animation="{{animation}}"></image></view>
+</view>

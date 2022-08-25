@@ -1,0 +1,43 @@
+/* custom-tab-bar/index.wxss */
+.tab{
+  position: relative;
+  background-color: black;
+  height: 35px;
+  width: 100%;
+  display: flex;
+  z-index: 5;
+  color: aliceblue;
+  padding-top: 15px;
+}
+
+.t-image1{
+  position: absolute;
+  width: 20px;
+  left: 90rpx;
+}
+
+.t-image2{
+  position: absolute;
+  width: 15px;
+  right: 170rpx;
+}
+
+.hb-image1{
+  position: absolute;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: aqua;
+  bottom: 50rpx;
+  left: 180rpx;
+}
+
+.hb-image2{
+  position: absolute;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: aqua;
+  bottom: 50rpx;
+  right: 190rpx;
+}

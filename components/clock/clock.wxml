@@ -1,0 +1,13 @@
+<!--components/clock/clock.wxml-->
+<view class="cl-bg1">
+  <view class="c-v1"><image src="{{srclist[0]}}" class="c-img" wx:if="{{num >= 1}}"></image></view>
+  <view class="c-v2"><image src="{{srclist[1]}}" class="c-img" wx:if="{{num >= 2}}"></image></view>
+  <view class="c-v3"><image src="{{srclist[2]}}" class="c-img" wx:if="{{num >= 3}}"></image></view>
+  <view class="c-v4"><image src="{{srclist[4]}}" class="c-img" wx:if="{{num == 4}}"></image></view>
+  <text wx:if="{{status == 'fail'}}" class="c-t2">拼车失败，去确认</text>
+  <text wx:if="{{status == 'cancel'}}" class="c-t3">拼车已被发起人取消，去确认</text>
+  <text wx:if="{{status == 'success'}}" class="c-t4">拼车成功去评价</text>
+  <text class="c-t1" wx:if="{{status == 'ing'}}">倒计时:{{days}}天{{hours}}时{{minutes}}分{{seconds}}秒</text>
+  <text class="c-tx" wx:if="{{status == 'ing'}}">拼车中</text>
+
+</view>

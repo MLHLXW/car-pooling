@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view>
+  <van-transition show="{{ show }}" name="slide-left"><sideBar bind:sync="showSide2"
+  name="{{plist.name}}"
+  phone="{{plist.phone}}"
+  grade="{{plist.credit_points}}"
+  tsrc="{{plist.head_portrait}}"
+  bind:sx="sx"></sideBar></van-transition>
+  <image class="bg-image" mode="scaleToFill" src="../../images/bg1.png"></image>
+  <image class="tx-image" wx:if="{{sshow}}" bindtap="showSide" src="{{plist.head_portrait}}"></image>
+  <view class="p-search">
+    <van-search
+      value="{{splace}}"
+      shape="round"
+      background="transparent"
+      placeholder="搜索目的地"
+      bind:change="onChange"
+      bind:search="mySearch"
+    ></van-search>
+  </view>
+  <view class="my-clock">
+    <block wx:for="{{hlist}}" wx:key="index">
+      <clock id="a{{index}}" status="{{item.status}}" num="{{item.people_number}}" 
+      srclist="{{item.headPortraits}}" 
+      bindtap="gw" data-message="{{item.status}}" data-fid="{{item.id}}"
+      data-deadline="{{item.deadline}}" data-begin="{{item.origin}}" 
+      data-end="{{item.destination}}" bind:sx="sx"></clock>
+    </block>
+  </view>
+  <view class="a-position">
+    <block wx:for="{{list}}" wx:key="index" class="a-position"> 
+      <show wx:if="{{item.count != 0}}" count="{{item.count}}" destination="{{item.place}}" catogry="{{item.category}}" bindtap="goto" data-id="{{item.category}}" data-name="{{item.place}}"></show>
+    </block>
+  </view>
+  <view >
+    <tc bindtap="showSide3"></tc>
+  </view>
+</view>

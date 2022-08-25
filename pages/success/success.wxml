@@ -1,0 +1,20 @@
+<!--pages/success/success.wxml-->
+<view>
+  <text class="suc-t1">{{list.carpoolForm.origin}}</text>
+  <image src="../../images/right.png" class="suc-img1"></image>
+  <text class="suc-t2">{{list.carpoolForm.destination}}</text>
+  <text class="suc-t3">截止时间：{{deadline}}</text>
+  <text class="suc-t4">拼车成功</text>
+  <view class="suc-bg1">
+    <text class="suc-t5">乘车人信息</text>
+    <view class="suc-bg2">
+      <view wx:for="{{list.userList}}">
+        <person bg="{{item.isMas?1:2}}" name="{{item.name}}" grade="98" phone="{{item.phone}}" psrc="{{head_portrait}}"></person>
+      </view>
+      <text class="suc-t6">备注信息</text>
+      <textarea class="suc-t7">这里是备注信息</textarea>
+      <button class="s-but">已完成搭乘，去评价</button>
+    </view>
+  </view>
+</view>
+

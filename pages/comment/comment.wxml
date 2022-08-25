@@ -1,0 +1,8 @@
+<!--pages/comment/comment.wxml-->
+<view>
+
+</view>
+<view class="cp-1" id="gd">
+  <amotion></amotion>
+</view>
+

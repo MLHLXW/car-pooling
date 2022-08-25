@@ -1,0 +1,48 @@
+<!--components/test/show.wxml-->
+<view class="box">
+  <view wx:if="{{catogry == '机场'}}" class="a-show1">
+    <image class="a-image" src="../../images/plane.png"></image>
+    <text class="a-text1">{{destination}}</text>
+    <view class="a-text2">
+      <text>共有 </text>
+      <text style="font-weight: bold;">{{count}}</text>
+      <text> 支队伍正在拼车中</text>
+    </view>
+  </view>
+  <view wx:if="{{catogry == '医院'}}" class="a-show2">
+    <image class="a-image" src="../../images/hos.png"></image>
+    <text class="a-text1">{{destination}}</text>
+    <view class="a-text2">
+      <text>共有 </text>
+      <text style="font-weight: bold;">{{count}}</text>
+      <text> 支队伍正在拼车中</text>
+    </view>
+  </view>
+  <view wx:if="{{catogry == '公园'}}" class="a-show3">
+    <image class="a-image" src="../../images/park.png"></image>
+    <text class="a-text1">{{destination}}</text>
+    <view class="a-text2">
+      <text>共有 </text>
+      <text style="font-weight: bold;">{{count}}</text>
+      <text> 支队伍正在拼车中</text>
+    </view>
+  </view>
+  <view wx:if="{{catogry == '大学'}}" class="a-show4">
+    <image class="a-image2" src="../../images/school.png"></image>
+    <text class="a-text1">{{destination}}</text>
+    <view class="a-text2">
+      <text>共有 </text>
+      <text style="font-weight: bold;">{{count}}</text>
+      <text> 支队伍正在拼车中</text>
+    </view>
+  </view>
+  <view wx:if="{{catogry == '车站'}}" class="a-show5">
+    <image class="a-image" src="../../images/station.png"></image>
+    <text class="a-text1">{{destination}}</text>
+    <view class="a-text2">
+      <text>共有 </text>
+      <text style="font-weight: bold;">{{count}}</text>
+      <text> 支队伍正在拼车中</text>
+    </view>
+  </view>
+</view>

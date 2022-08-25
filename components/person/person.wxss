@@ -1,0 +1,68 @@
+/* components/person/person.wxss */
+.pe-t1{
+ /* 小哥哥 */
+position: absolute;
+width: 37px;
+height: 26px;
+top: 10px;
+left: 104px;
+color: rgb(33, 28, 29);
+font-size: 12px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.pe-t2{
+/* 诚信分98 */
+position: absolute;
+width: 151px;
+height: 26px;
+top: 10px;
+left: 170px;
+color: rgb(5, 191, 171);
+font-size: 12px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.pe-t3{
+/* 手机号：1888983289273 */
+position: absolute;
+width: 183px;
+height: 26px;
+top: 38px;
+left: 104px;
+color: rgb(33, 28, 29);
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.pe-img{
+  /* Ellipse 34 */
+position: absolute;
+width: 50.18px;
+height: 50px;
+border-radius: 50%;
+top: 12px;
+left: 29px;
+}
+.pe-bg1{
+  position: relative;
+  width: 298px;
+  height: 71px;
+  background-color: white;
+  border-radius: 30px;
+}
+.pe-bg2{
+  /* 矩形 5 */
+  position: relative;
+  margin-top: 20px;
+  width: 298px;
+  height: 71px;
+  background-color: rgb(192, 244, 239);
+  border-radius: 30px;
+}

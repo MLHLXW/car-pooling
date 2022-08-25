@@ -1,0 +1,26 @@
+<!--components/sideBar/sideBar.wxml-->
+<view class="si-bg1">
+  <image class="si-img1" src="{{tsrc}}" bindtap="mybad"></image>
+  <text class="si-t1">{{name}}</text>
+  <text class="si-t2">{{phone}}</text>
+  <text class="si-t3">诚信分{{grade}}</text>
+  <image class="si-img2" src="../../images/sp.png"></image>
+  <text class="si-t4" bindtap="on">头像上传</text>
+  <view class="si-bg2" wx:if="{{isshow}}">
+      <view class="si-bg3"> 
+        <van-uploader 
+        file-list="{{ fileList }}" 
+        class="si-up"
+        bind:after-read="afterRead" 
+        catch:delete="deleteClick"
+        max-count="1">
+        <view class="si-bgi">
+        </view>
+        </van-uploader>
+        <button class="si-but" bindtap="off">确定</button>
+      </view>
+  </view>
+  <image class="si-img3" src="../../images/phone.png"></image>
+  <text class="si-t5" bindtap="x_phone">修改手机号码</text>
+  <navigator url="/pages/s_number/s_numeber" bindtap="gob" class="tui" >退出</navigator>
+</view>

@@ -1,0 +1,7 @@
+<!--components/person/person.wxml-->
+<view class= "{{bg == 1 ? 'pe-bg1' : 'pe-bg2'}}">
+  <image class="pe-img"  src="{{psrc}}"></image>
+  <text class="pe-t1">{{name}}</text>
+  <text class="pe-t2">诚信分{{grade}}</text>
+  <text class="pe-t3">手机号：{{phone}}</text>
+</view>

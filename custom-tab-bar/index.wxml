@@ -1,0 +1,10 @@
+<!--custom-tab-bar/index.wxml-->
+<view class="tab">
+  <view class="{{index == 1? 'hb-image1': 'hb-image2'}}"></view>
+  <view class="t-image1"  bindtap="gotoHome">
+    <image class="t-image1" mode="widthFix" src="../images/home1.png"></image>
+  </view>
+  <view bindtap="gotoDes">
+    <image class="t-image2" mode="widthFix" src="../images/h-icon1.png"></image>
+  </view>
+</view>

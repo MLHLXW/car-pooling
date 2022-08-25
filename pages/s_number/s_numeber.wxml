@@ -1,0 +1,13 @@
+<!--pages/s_number/s_numeber.wxml-->
+<view class="bgs">
+    <text class="p-t1">1: 绑定学号</text>
+    <image class="p-img" src="../../images/car.png"></image>
+    <view class="p-v1"> 
+      <text class="p-t2">学号</text>
+      <input class="p-i1" bindinput="inputno"/>
+      <text class="p-t3">密码</text>
+      <input class="p-i2" type="password" bindinput="inputpw"/>
+    </view>
+    <image src="../../images/jt.png" class="p-button1" bindtap="login" ></image>
+</view>
+

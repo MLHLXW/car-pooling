@@ -1,0 +1,61 @@
+{ 
+  "lazyCodeLoading": "requiredComponents",
+  "pages": [
+    "pages/s_number/s_numeber",
+    "pages/index/index",
+    "pages/a-index/a-index",
+    "pages/x_phone/x_phone",
+    "pages/phone/phone",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/detail/detail",
+    "pages/carList/carList",
+    "pages/success/success",
+    "pages/a-fail/a-fail",
+    "pages/comment/comment",
+    "pages/b-fail/b-fail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "兄弟拼马",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "clock": "/components/clock/clock",
+    "amotion": "/components/amotion/amotion",
+    "sideBar": "/components/sideBar/sideBar",
+    "show": "/components/show/show",
+    "tc": "/components/tc/tc",
+    "person": "/components/person/person",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home1.png",
+        "selectedIconPath": "/images/home2.png"
+      },
+      {
+        "pagePath": "pages/a-index/a-index",
+        "text": "目的地",
+        "iconPath": "/images/h-icon1.png",
+        "selectedIconPath": "/images/h-icon1.png"
+      }
+    ]
+  }
+}

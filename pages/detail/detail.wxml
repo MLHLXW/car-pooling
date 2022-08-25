@@ -1,0 +1,22 @@
+<!--pages/detail/detail.wxml-->
+<view class="de-bg">
+  <text class="d-t1">起点</text>
+  <text class="d-t2">{{list.origin}}</text>
+  <image src="../../images/down.png" class="d-img1"></image>
+  <text class="d-t3">终点</text>
+  <text class="d-t4">{{list.destination}}</text>
+  <text class="d-t5">截至时间：{{list.deadline}}</text>
+  <view class="d-v1"><image src="{{list.headPortraits[0]}}" wx:if="{{list.people_number >= 1}}" class="d-img2"></image></view>
+  <view class="d-v2"><image src="{{list.headPortraits[1]}}" wx:if="{{list.people_number >= 2}}" class="d-img2"></image></view>
+  <view class="d-v3"><image src="{{list.headPortraits[2]}}" wx:if="{{list.people_number >= 3}}" class="d-img2"></image></view>
+  <view class="d-v4"><image src="{{list.headPortraits[3]}}" wx:if="{{list.people_number == 4}}" class="d-img2"></image></view>
+  <view class="d-bg2">
+    <text class="d-vt1">发起人信息</text>
+    <person class="c-pos" name="{{list.name}}" grade="{{list.credit_points}}" phone="{{list.phone}}" psrc="{{list.head_portrait}}"></person>
+    <text class="d-vt2">备注信息</text>
+    <textarea class="ta" disabled="{{true}}">{{list.remark}}</textarea>
+    <button class="d-but" wx:if="{{list.message == '加入拼车'}}" bindtap="join">{{list.message}}</button>
+    <button class="d-but" wx:if="{{list.message == '取消拼车'}}">{{list.message}}</button>
+    <button class="d-but" wx:if="{{list.message == '退出拼车'}}" bindtap="leave">{{list.message}}</button>
+  </view>
+</view>

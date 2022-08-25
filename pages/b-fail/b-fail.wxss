@@ -1,0 +1,117 @@
+/* pages/b-fail/b-fail.wxss */
+page{
+  /* 拼车失败（人不够） */
+width: 375px;
+height: 812px;
+background: rgb(196, 196, 196);
+}
+.suc-t1{
+  /* 福大北门 */
+position: absolute;
+width: 72px;
+height: 26px;
+top: 72px;
+left: 85px;
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.suc-t2{
+    /* 福州机场 */
+position: absolute;
+width: 72px;
+height: 26px;
+top: 72px;
+left: 213px;
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.suc-t3{
+  /* 截止时间：8：00 7/22/2022 */
+position: absolute;
+width: 257px;
+height: 26px;
+top: 110px;
+left: 84px;
+color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.suc-t4{
+  /* 拼车成功 */
+position: absolute;
+width: 96px;
+height: 26px;
+top: 172.1px;
+left: 140.1px;
+color: rgb(255, 255, 255);
+font-size: 24px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.suc-img1{
+  /* path */
+position: absolute;
+width: 28.03px;
+height: 21.61px;
+top: 76.03px;
+left: 173.9px;
+}
+.af-bg1{
+  position: absolute;
+  top: 220px;
+  width: 375px;
+  height: 592px;
+  background-color: white;
+}
+.af-t1{
+  /* 很遗憾 人数没有满呢 */
+position: absolute;
+width: 120px;
+height: 56px;
+top: 76px;
+left: 127px;
+color: rgb(0, 0, 0);
+font-size: 20px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: center;
+}
+.af-img1{
+  /* path */
+position: absolute;
+width: 41.4px;
+height: 41.4px;
+top: 166px;
+left: 167px;
+}
+.af-but{
+  /* 矩形 6 */
+position: absolute;
+width: 298px;
+height: 38px;
+top: 309px;
+left: 38px;
+background: rgb(196, 196, 196);
+border-radius: 30px;
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 20px;
+text-align: center;
+padding-left: 40px;
+}
