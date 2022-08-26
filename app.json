@@ -1,4 +1,4 @@
-{ 
+{
   "lazyCodeLoading": "requiredComponents",
   "pages": [
     "pages/s_number/s_numeber",
@@ -13,14 +13,16 @@
     "pages/success/success",
     "pages/a-fail/a-fail",
     "pages/comment/comment",
-    "pages/b-fail/b-fail"
+    "pages/b-fail/b-fail",
+    "pages/x-index/x-index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "兄弟拼马",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef"
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {

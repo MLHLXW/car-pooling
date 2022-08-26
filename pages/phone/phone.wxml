@@ -1,6 +1,6 @@
 <!--pages/phone/phone.wxml-->
 <view class="bgs">
-    <text class="p-t1">2: 绑定手机号，填写昵称</text>
+    <text class="p-t1">绑定手机号，填写昵称</text>
     <image class="p-img" src="../../images/car.png"></image>
     <view class="p-v1"> 
       <text class="p-t2">昵称</text>
@@ -9,7 +9,8 @@
       <input class="p-i2" bindinput="inputph"/>
       <text class="p-t4">验证码</text>
       <input class="p-i3" bindinput="inputyz"/>
-      <button class="p-button1" bindtap="send">发送验证码</button>
+      <button class="p-button1" bindtap="send" wx:if="{{isok}}">发送验证码</button>
+      <button class="p-button12" wx:if="{{!isok}}">{{djs}}s</button>
     </view>
     <button class="p-button2" bindtap="bendphone">绑定</button>
 </view>

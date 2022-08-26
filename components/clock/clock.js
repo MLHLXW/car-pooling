@@ -7,6 +7,7 @@ Component({
     status: String,
     srclist: Array,
     num: Number,
+    timer: null,
   },
 
   /**
@@ -44,12 +45,13 @@ Component({
           })
         }
         else{
+          clearInterval(that.data.timer);
           that.triggerEvent("sx");
         }
     },
     begin(endDate){
       var that = this;
-      setInterval(this.countTime, 1000, endDate, that)
+      this.data.timer = setInterval(this.countTime, 1000, endDate, that)
     }
   },
 

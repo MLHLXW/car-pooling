@@ -2,18 +2,23 @@
 <view>
   <text class="suc-t1">{{list.carpoolForm.origin}}</text>
   <image src="../../images/right.png" class="suc-img1"></image>
-  <text class="suc-t2">{{list.carpoolForm.destination}}</text>
-  <text class="suc-t3">截止时间：{{deadline}}</text>
-  <text class="suc-t4">拼车成功</text>
+  <text class="{{(list.carpoolForm.destination == '福建医科大学附属第一医院')? 'whl':'suc-t2'}}">{{list.carpoolForm.destination}}</text>
+  <text class="suc-t3" >截止时间：{{deadline}}</text>
+  <text class="suc-t4" bindtap="test">拼车成功</text>
   <view class="suc-bg1">
     <text class="suc-t5">乘车人信息</text>
     <view class="suc-bg2">
-      <view wx:for="{{list.userList}}">
-        <person bg="{{item.isMas?1:2}}" name="{{item.name}}" grade="98" phone="{{item.phone}}" psrc="{{head_portrait}}"></person>
+      <view wx:for="{{list.userList}}" wx:key="index">
+        <person bg="{{item.isMas?1:2}}" name="{{item.name}}" grade="{{item.credit_points}}" phone="{{item.phone}}" psrc="{{item.head_portrait}}" 
+        wx:if="{{item.isMas}}"></person>
       </view>
-      <text class="suc-t6">备注信息</text>
-      <textarea class="suc-t7">这里是备注信息</textarea>
-      <button class="s-but">已完成搭乘，去评价</button>
+      <view wx:for="{{list.userList}}" wx:key="index">
+        <person bg="{{item.isMas?1:2}}" name="{{item.name}}" grade="{{item.credit_points}}" phone="{{item.phone}}" psrc="{{item.head_portrait}}"
+        wx:if="{{!item.isMas}}"></person>
+      </view>
+      <view class="suc-t6"><text>备注信息</text></view>
+      <textarea class="suc-t7">{{list.carpoolForm.remark}}</textarea>
+      <button class="s-but" bindtap="mgt" wx:if="{{list.isEval}}">已完成搭乘，去评价</button>
     </view>
   </view>
 </view>

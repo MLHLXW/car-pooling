@@ -99,7 +99,7 @@ text-align: left;
 }
 .car-bg3{
   /* 矩形 2 */
-position: absolute;
+position: relative;
 width: 320px;
 height: 93px;
 left: 25px;
@@ -108,13 +108,13 @@ border-radius: 20px;
 }
 .car-bg4{
   /* 矩形 2 */
-position: absolute;
+position: relative;
 width: 321px;
 height: 77px;
-top: 93px;
 left: 24px;
 background: rgb(255, 255, 255);
 border-radius: 20px;
+margin-bottom: 20px;
 }
 .d-v1{
   position: absolute;
@@ -165,7 +165,7 @@ border-radius: 20px;
 .car-t2{
   /* 起点：福大北门 */
 position: absolute;
-width: 98px;
+width: 198px;
 height: 28px;
 top: 15px;
 left: 50px;

@@ -6,7 +6,29 @@ Page({
    */
   data: {
     phone: '',
-    yz: ''
+    yz: '',
+    timer: null,
+    djs: 60,
+    isok: true,
+  },
+  clock(){
+    const that = this; 
+    that.setData({
+      isok: false,
+      djs: 60
+    })
+    that.data.timer = setInterval(()=>{
+      if(that.data.djs >= 1){
+        that.setData({
+          djs: that.data.djs - 1
+        })
+      }else{
+        clearInterval(that.data.timer)
+        that.setData({
+          isok: true
+        })
+      }
+    },1000)
   },
   inputph(e){
     var ph = e.detail.value;
@@ -22,6 +44,8 @@ Page({
     })
   },
   async send(){
+  if(this.data.phone != ''){
+    this.clock();
     const {data: res} = await wx.p.request({
       method: 'POST',
       url: 'https://rrewuq.com/sendMessage',
@@ -37,6 +61,14 @@ Page({
       icon: 'none',
       duration: 2000//持续的时间
     })
+  }
+  else{
+    wx.showToast({
+      title: '请输入正确的手机号',
+      icon: 'none',
+      duration: 2000//持续的时间
+    })
+  }
   },
   async bendphone(){
     const {data: res} = await wx.p.request({

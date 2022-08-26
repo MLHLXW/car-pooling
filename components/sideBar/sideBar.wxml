@@ -13,6 +13,7 @@
         class="si-up"
         bind:after-read="afterRead" 
         catch:delete="deleteClick"
+        is-multiple = "false"
         max-count="1">
         <view class="si-bgi">
         </view>

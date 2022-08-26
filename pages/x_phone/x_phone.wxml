@@ -7,7 +7,8 @@
       <input class="p-i2" bindinput="inputph"/>
       <text class="p-t4">验证码</text>
       <input class="p-i3" bindinput="inputyz"/>
-      <button class="p-button1" bindtap="send">发送验证码</button>
+      <button class="p-button1" bindtap="send" wx:if="{{isok}}">发送验证码</button>
+      <button class="p-button12" wx:if="{{!isok}}">{{djs}}s</button>
     </view>
     <button class="p-button2" bindtap="bendphone">绑定</button>
 </view>

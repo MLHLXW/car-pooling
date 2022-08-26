@@ -24,6 +24,7 @@
         count="{{item.count}}" destination="{{item.place}}" catogry="{{item.category}}"
         bindtap="goto" data-id="{{item.category}}" data-name="{{item.place}}"></show>
       </block>
+      <view class="zw1"></view>
     </view>
 </view>
 <view>

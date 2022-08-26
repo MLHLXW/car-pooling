@@ -11,7 +11,7 @@
   </view>
   <view wx:if="{{catogry == '医院'}}" class="a-show2">
     <image class="a-image" src="../../images/hos.png"></image>
-    <text class="a-text1">{{destination}}</text>
+    <text class="{{(destination == '福州市第一医院')?'tx2':'a-text1'}} {{(destination == '福建医科大学附属第一医院')?'tx3':'a-text1'}}">{{destination}}</text>
     <view class="a-text2">
       <text>共有 </text>
       <text style="font-weight: bold;">{{count}}</text>
@@ -20,7 +20,7 @@
   </view>
   <view wx:if="{{catogry == '公园'}}" class="a-show3">
     <image class="a-image" src="../../images/park.png"></image>
-    <text class="a-text1">{{destination}}</text>
+    <text class="{{(destination == '福州国家森林公园')?'tx1':'a-text1'}}">{{destination}}</text>
     <view class="a-text2">
       <text>共有 </text>
       <text style="font-weight: bold;">{{count}}</text>

@@ -1,0 +1,128 @@
+/* pages/s_number/s_numeber.wxss */
+.bgs{
+  position: relative;
+  width: 750rpx;
+  height: 100vh;
+  background: rgb(13, 209, 188);  
+}
+
+.p-t1{
+  /* 2：绑定手机号，填写昵称 */
+  position: absolute;
+  width: 186px;
+  height: 26px;
+  top: 358rpx;
+  left: 92rpx;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.p-v1{
+  /* 矩形 5 */
+  position: absolute;
+  width: 662rpx;
+  height: 264px;
+  top: 410rpx;
+  left: 44rpx;
+  background: rgb(255, 255, 255);
+  border-radius: 32px;
+}
+
+.p-img{
+  /* path */
+  position: absolute;
+  width: 77px;
+  height: 58px;
+  top: 372rpx;
+  left: 478rpx;
+  z-index: 20;
+}
+
+.p-t2{
+  /* 昵称 */
+position: absolute;
+width: 36px;
+height: 26px;
+top: 85px;
+left: 69px;
+color: rgb(5, 191, 171);
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.p-t3{
+  /* 手机号 */
+position: absolute;
+width: 54px;
+height: 26px;
+top: 160px;
+left: 69px;
+color: rgb(5, 191, 171);
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.p-t4{
+  /* 验证码 */
+position: absolute;
+width: 54px;
+height: 26px;
+top: 175px;
+left: 69px;
+color: rgb(5, 191, 171);
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.p-i1{
+  /* 直线 2 */
+position: absolute;
+width: 167px;
+height: 26px;
+top: 85px;
+left: 69px;
+padding-left: 70px;
+border-bottom: 1px solid rgb(5, 191, 171);
+}
+
+.p-i2{
+  position: absolute;
+  width: 167px;
+  height: 26px;
+  top: 160px;
+  left: 69px;
+  padding-left: 70px;
+  border-bottom: 1px solid rgb(5, 191, 171);
+}
+
+.p-i3{
+  position: absolute;
+  width: 80px;
+  height: 26px;
+  top: 175px;
+  left: 69px;
+  padding-left: 70px;
+  border-bottom: 1px solid rgb(5, 191, 171);
+}
+
+.p-button1{
+/* path */
+position: absolute;
+width: 64.62px;
+height: 64.62px;
+top: 520px;
+left: 160px;
+}

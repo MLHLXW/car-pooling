@@ -16,7 +16,9 @@
     <text class="d-vt2">备注信息</text>
     <textarea class="ta" disabled="{{true}}">{{list.remark}}</textarea>
     <button class="d-but" wx:if="{{list.message == '加入拼车'}}" bindtap="join">{{list.message}}</button>
-    <button class="d-but" wx:if="{{list.message == '取消拼车'}}">{{list.message}}</button>
+    <button class="d-but" wx:if="{{list.message == '取消拼车'}}" bindtap="cancel">{{list.message}}</button>
     <button class="d-but" wx:if="{{list.message == '退出拼车'}}" bindtap="leave">{{list.message}}</button>
+    <button class="d-but" wx:if="{{list.message == '前往登录加入拼车单'}}" bindtap="glogin">{{list.message}}</button>
+    <button class="d-but" wx:if="{{list.message == 'null'}}" bindtap="tlogin">登录查看其他拼单</button>
   </view>
 </view>

@@ -7,17 +7,17 @@
 
 .a-show1{
  background-color: rgb(254, 246, 218);
- width: 328px;
+ width: 656rpx;
  height: 120px;
- margin-top: 10px;
- right: -65px;
+ margin-top: 20rpx;
+ right: -130rpx;
  border-radius:20px;
  position: relative;
  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .a-show2{
   background-color: rgb(255, 233, 224);
-  width: 328px;
+  width: 656rpx;
   height: 120px;
   margin-top: 10px;
   right: -65px;
@@ -28,7 +28,7 @@
 
  .a-show3{
   background-color: rgb(192, 244, 239);
-  width: 328px;
+  width: 656rpx;
   height: 120px;
   margin-top: 10px;
   right: -65px;
@@ -39,7 +39,7 @@
 
  .a-show4{
   background-color: rgb(120, 240, 184);
-  width: 328px;
+  width: 656rpx;
   height: 120px;
   margin-top: 10px;
   right: -65px;
@@ -49,7 +49,7 @@
  }
  .a-show5{
   background-color: rgb(250, 190, 242);
-  width: 328px;
+  width: 656rpx;
   height: 120px;
   margin-top: 10px;
   right: -65px;
@@ -62,21 +62,22 @@
    height: 100px;
    position: absolute;
    margin-top: 10px;
-   left: 20px;
+   left: 40rpx;
  }
  .a-image2{
   width: 100px;
   height: 80px;
   position: absolute;
   margin-top: 15px;
-  left: 20px;
+  left: 40rpx;
 }
  .a-text1{
+   width: 315rpx;
    font-size: 24px;
    line-height: 26px;
    position: absolute;
    margin-top: 15px;
-   left: 150px;
+   left: 300rpx;
  }
 
  .a-text2{
@@ -86,5 +87,30 @@
    line-height: 28px;
    position:absolute;
    margin-top: 50px;
-   left: 150px;
+   left: 300rpx;
+ }
+ .tx1{
+  width: 315rpx;
+  font-size: 18px;
+  line-height: 26px;
+  position: absolute;
+  margin-top: 15px;
+  left: 300rpx;
+ }
+ .tx2{
+  width: 315rpx;
+  font-size: 20px;
+  line-height: 26px;
+  position: absolute;
+  margin-top: 15px;
+  left: 300rpx;
+ }
+ .tx3{
+  width: 315rpx;
+  font-size: 12px;
+  line-height: 26px;
+  position: absolute;
+  margin-top: 15px;
+  font-weight: 580;
+  left: 300rpx;
  }

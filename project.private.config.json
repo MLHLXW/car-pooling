@@ -81,6 +81,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/comment/comment",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

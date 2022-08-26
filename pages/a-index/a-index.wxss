@@ -1,8 +1,7 @@
 /* pages/a-index/a-index.wxss */
 .a-i-bg{
-position: fixed;
-width: 375px;
-height: 816px;
+position: relative;
+width: 750rpx;
 background: rgb(221, 249, 247);
 }
 .a-search{
@@ -50,4 +49,9 @@ height: 32px;
 color: rgb(5, 191, 171);
 background:  rgb(221, 249, 247);
 border-radius: 0px 20px 20px 0px;
+}
+.zw1{
+  display: block;
+  width: 200px;
+  height: 200rpx;
 }

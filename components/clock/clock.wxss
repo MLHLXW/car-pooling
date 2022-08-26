@@ -2,11 +2,11 @@
 .cl-bg1{
   /* 矩形 2 */
 position: relative;
-width: 167px;
+width: 341rpx;
 height: 56px;
 background: rgb(255, 255, 255);
 border-radius: 20px 0px 0px 20px;
-margin-bottom: 10px;
+margin-bottom: 20rpx;
 }
 .c-v1{
   /* Ellipse 34 */

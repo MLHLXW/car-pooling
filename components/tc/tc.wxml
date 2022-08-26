@@ -30,7 +30,7 @@
     <text class="t3">截止时间</text>
     <text class="t4">需要拼车人数</text>
     <view class="f1">{{currentChoose}}</view>
-    <button bind:tap="openPicker" class="mop">↓</button>
+    <text bind:tap="openPicker" class="mop">▼</text>
       <van-action-sheet show="{{ show }}" bind:close="onClose" bind:getuserinfo="onGetUserInfo">
       <van-datetime-picker type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:cancel="onCancel"
       bind:confirm="onConfirm" />

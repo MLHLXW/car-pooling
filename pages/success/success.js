@@ -11,9 +11,9 @@ Page({
   },
   
   async getlist(){
-    const {data: res} = await wx.pwx.request({
+    const {data: res} = await wx.p.request({
       method: 'POST',
-      url: 'https://rrewuq.com/destList',
+      url: 'https://rrewuq.com/successForm',
       data: {
         id: this.data.id
       },
@@ -26,7 +26,12 @@ Page({
       list: res
     })
   },
-  
+  mgt(){
+    var mid = this.data.id
+    wx.navigateTo({
+      url: '/pages/comment/comment?id='+mid,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -84,6 +89,20 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-
+    var self = this;
+    return {
+      title: "快来看看我的行程表！",
+      path: '/pages/success/success?id=' + self.data.id + '&deadline=' + self.data.deadline,
+    }
+  },
+  onPullDownRefresh: function () {
+    wx.showNavigationBarLoading(); 
+        wx.showLoading({
+          title: '刷新中...',
+        })
+        this.onLoad();
+        wx.hideLoading();
+        wx.hideNavigationBarLoading();
+        wx.stopPullDownRefresh();
   }
 })

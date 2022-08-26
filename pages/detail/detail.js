@@ -54,6 +54,9 @@ Page({
     }
   },
   async leave(){
+    wx.showLoading({
+      title: '加载中',
+    });
     const {data: res} = await wx.p.request({
       method: 'POST',
       url: 'https://rrewuq.com/secede',
@@ -70,12 +73,27 @@ Page({
       icon: 'none',
       duration: 2000//持续的时间
     })
-    wx.switchTab({
-      url: '/pages/index/index',
-    })
-    console.log(res)
+    setTimeout(()=>{
+      wx.hideLoading()
+      wx.switchTab({
+        url: '/pages/index/index',
+      })
+    },2000)
  },
+glogin(){
+    wx.navigateTo({
+      url: '/pages/x-index/x-index?id='+this.data.id,
+    })
+},
+tlogin(){
+    wx.navigateTo({
+      url: '/pages/s_number/s_numeber',
+    })
+},
  async cancel(){
+  wx.showLoading({
+    title: '加载中',
+  });
   const {data: res} = await wx.p.request({
     method: 'POST',
     url: 'https://rrewuq.com/cancelForm',
@@ -92,10 +110,12 @@ Page({
     icon: 'none',
     duration: 2000//持续的时间
   })
-  wx.switchTab({
-    url: '/pages/index/index',
-  })
-  console.log(res)
+  setTimeout(()=>{
+    wx.hideLoading()
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
+  },2000)
 },
   /**
    * 生命周期函数--监听页面加载
@@ -138,8 +158,15 @@ Page({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh() {
-
+  onPullDownRefresh: function () {
+    wx.showNavigationBarLoading(); 
+        wx.showLoading({
+          title: '刷新中...',
+        })
+        this.onLoad();
+        wx.hideLoading();
+        wx.hideNavigationBarLoading();
+        wx.stopPullDownRefresh();
   },
 
   /**
@@ -153,6 +180,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-
+    var self = this;
+    return {
+      title: "快来加入我的拼车！",
+      path: '/pages/detail/detail?id=' + self.data.id,
+    }
   }
 })

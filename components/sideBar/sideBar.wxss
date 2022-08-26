@@ -1,9 +1,9 @@
 /* components/sideBar/sideBar.wxss */
 .si-bg1{
 /* 矩形 4 */
-position: absolute;
+position: fixed;
 width: 171px;
-height: 812px;
+height: 1712rpx;
 top: 0;
 left: 0;
 background: rgb(221, 249, 247);
@@ -176,7 +176,7 @@ border-radius: 73px;
 position: absolute;
 width: 108px;
 height: 26px;
-top: 710px;
+top: 1220rpx;
 left: 31px;
 color: rgb(5, 191, 171);
 font-size: 16px;

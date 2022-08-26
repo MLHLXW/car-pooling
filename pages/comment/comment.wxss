@@ -1,7 +1,186 @@
 /* pages/comment/comment.wxss */
+page{
+  background-color: rgb(13, 209, 188);
+  width: 750rpx;
+  height: 1000px;
+}
 .cp-1{
+  position: relative;
+  margin-top: 200rpx;
+  margin-left: 255rpx;
+}
+.am-t{
+  /* 一键五星 */
+z-index: 10;
+position: absolute;
+width: 65px;
+height: 26px;
+top: 120px;
+left: 55rpx;
+color: rgb(5, 191, 171);
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.c-bg1{
   position: absolute;
-  top: 170px;
+  top: 220px;
+  height: 800px;
+  width: 750rpx;
+  background-color: white;
+}
+.c-bg2{
+  position: relative;
+  height: 110px;
+  width: 630rpx;
+  left: 30px;
+  border-bottom: solid 1px  rgb(5, 191, 171);
+}
+.suc-t1{
+  /* 福大北门 */
+position: absolute;
+width: 72px;
+height: 26px;
+top: 72px;
+left: 85px;
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.whl{
+  position: absolute;
+  width: 272px;
+  height: 26px;
+  top: 72px;
+  left: 213px;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.suc-t2{
+    /* 福州机场 */
+position: absolute;
+width: 172px;
+height: 26px;
+top: 72px;
+left: 213px;
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.suc-t3{
+  /* 截止时间：8：00 7/22/2022 */
+position: absolute;
+width: 257px;
+height: 26px;
+top: 110px;
+left: 140rpx;
+color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.suc-t4{
+  /* 拼车成功 */
+position: absolute;
+width: 96px;
+height: 26px;
+top: 172.1px;
+left: 140.1px;
+color: rgb(255, 255, 255);
+font-size: 24px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.suc-img1{
+  /* path */
+position: absolute;
+width: 28.03px;
+height: 21.61px;
+top: 76.03px;
+left: 173.9px;
+}
+.ba-img1{
+  width: 37px;
+  height: 37px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.ba-t1{
+  position: absolute;
+  left: -33px;
+  top: 71px;
+  width: 160px;
+  text-align: center;
+  font-weight: 600;
+}
+.ba-t2{
+  position: absolute;
+  left: 103px;
+  top: 28px;
+  width: 260px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 560;
+}
+.ba-img2s{
+  width: 23px;
+  height: 22.51px;
+}
+.ba-img2{
+  /* path */
+width: 23px;
+height: 22.51px;
+margin-left: 44rpx;
+}
+.ba-po1{
+  position: absolute;
   left: 100px;
+  top: 60px
+}
+.bg-t3{
+  /* 注：请确认金额协商完成，订单不做保留 */
+width: 217px;
+height: 26px;
+margin-left: 160rpx;
+color: rgb(5, 191, 171);
+font-size: 12px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
+.bg-but{
+  /* 矩形 6 */
+position: absolute;
+width: 298px;
+height: 38px;
+margin-top: 60rpx;
+margin-left: 74rpx;
+line-height: 38px;
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 700;
+letter-spacing: 0px;
+text-align: center;
+background: rgb(13, 209, 188);
+border-radius: 30px;
 }
 

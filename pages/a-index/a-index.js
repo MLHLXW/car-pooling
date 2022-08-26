@@ -111,8 +111,15 @@ Page({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh() {
-
+  onPullDownRefresh: function () {
+    wx.showNavigationBarLoading(); 
+        wx.showLoading({
+          title: '刷新中...',
+        })
+        this.onLoad();
+        wx.hideLoading();
+        wx.hideNavigationBarLoading();
+        wx.stopPullDownRefresh();
   },
 
   /**

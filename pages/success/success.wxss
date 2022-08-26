@@ -4,6 +4,19 @@ page{
   width: 375px;
   height: 1000px;
 }
+.whl{
+position: absolute;
+width: 272px;
+height: 26px;
+top: 72px;
+left: 213px;
+color: rgb(255, 255, 255);
+font-size: 13px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
 .suc-t1{
   /* 福大北门 */
 position: absolute;
@@ -21,7 +34,7 @@ text-align: left;
 .suc-t2{
     /* 福州机场 */
 position: absolute;
-width: 72px;
+width: 272px;
 height: 26px;
 top: 72px;
 left: 213px;
@@ -35,10 +48,10 @@ text-align: left;
 .suc-t3{
   /* 截止时间：8：00 7/22/2022 */
 position: absolute;
-width: 257px;
+width: 357px;
 height: 26px;
 top: 110px;
-left: 84px;
+left: 140rpx;
 color: rgb(255, 255, 255);
 font-size: 16px;
 font-weight: 500;
@@ -90,17 +103,16 @@ letter-spacing: 0px;
 text-align: left;
 }
 .suc-bg2{
-  position: absolute;
-  left: 34px;
-  top: 40px;
+  position: relative;
+  left: 68rpx;
+  top: 80rpx;
 }
 .suc-t6{
   /* 备注信息 */
-position: absolute;
 width: 65px;
-height: 26px;
-top: 373px;
-left: 8px;
+height: 66rpx;
+padding-top: 80rpx;
+margin-left: 16rpx;
 color: rgb(33, 28, 29);
 font-size: 16px;
 font-weight: 600;
@@ -110,12 +122,10 @@ text-align: left;
 }
 .suc-t7{
   /* 矩形 5 */
-position: absolute;
 width: 298px;
 height: 88px;
-top: 425px;
-left: -8px;
-padding: 15px;
+margin-left: -16rpx;
+padding: 30rpx;
 background: rgb(192, 244, 239);
 border-radius: 30px;
 font-size: 11px;
@@ -124,11 +134,10 @@ line-height: 16px;
 letter-spacing: 0px;
 }
 .s-but{
-  position: absolute;
   width: 298px;
   height: 38px;
-  top: 630px;
-  left: 8px;
+  margin-top: 40rpx;
+  margin-left: 16rpx;
   background: rgb(13, 209, 188);
   border-radius: 30px;
   color: rgb(255, 255, 255);

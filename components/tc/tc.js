@@ -15,6 +15,7 @@ Component({
     myon: true, //控制弹窗以及发起按钮的显示
     isLimit: false,
     isOK: true,
+    myre: {isOk: true},
     begin: '',
     end: '',
     time: '',
@@ -31,8 +32,16 @@ Component({
     ],
     option2: [
       { text: '福州机场', value: 0 , category: '机场'},
-      { text: '中心医院', value: 1 , category: '医院'},
+      { text: '中医医院', value: 1 , category: '医院'},
       { text: '爱心公园', value: 2 , category: '公园'},
+      { text: '船政文化景区', value: 3, category: '公园' },
+      { text: '福州国家森林公园', value: 4 , category: '公园'},
+      { text: '福州市第一医院', value: 5 , category: '医院'},
+      { text: '福建医科大学附属第一医院', value: 6 , category: '医院'},
+      { text: '福州大学', value: 7 , category: '大学'},
+      { text: '福建医科大学', value: 8 , category: '大学'},
+      { text: '福建师范大学', value: 9 , category: '大学'},
+      { text: '福州长乐机场', value: 10 , category: '机场'},
     ],
     option3: [
       { text: '2', value: 0 },
@@ -53,7 +62,7 @@ Component({
     ],
     minHour: 0,
     maxHour: 24,
-    minDate: new Date().getTime(),
+    minDate: new Date(2022,7,20).getTime(),
     maxDate: new Date(2030, 12, 31).getTime(),
     currentDate: new Date().getTime(),
     show: false,
@@ -142,16 +151,16 @@ Component({
       })
       return taskStartTime;
     },
-    async send(){
-      console.log( this.data.option2[this.data.value2].category)
+    async send(e){
+    if(this.data.currentChoose != ''&& this.data.more != ''){
+      /*console.log( this.data.option2[this.data.value2].category)
       console.log(this.data.option1[this.data.value1].text)
       console.log(this.data.option2[this.data.value2].text)
       console.log(this.data.isLimit)
       console.log(this.data.option4[this.data.value4].text)
       console.log(this.data.option3[this.data.value3].text)
       console.log(this.data.more)
-      console.log(this.data.currentChoose)
-    if(this.data.currentChoose != ''&& this.data.more != ''){
+      console.log(this.data.currentChoose)*/
       if(this.data.isOK){
         if(this.data.grade != 0){
           this.setData({
@@ -176,12 +185,24 @@ Component({
             'satoken':wx.getStorageSync("token")
           }
         })
-        this.setData({myon: true})
-        wx.showToast({
-          title: '已发送',
-          icon: 'none',
-          duration: 2000//持续的时间
+        this.setData({
+          myon: true,
+          myre: res,
         })
+        if(this.data.myre.isOk == false){
+          wx.showToast({
+            title: '请选择正确的时间！',
+            icon: 'none',
+            duration: 2000//持续的时间
+          })
+        }else{
+          wx.showToast({
+            title: '已发送',
+            icon: 'none',
+            duration: 2000//持续的时间
+          })
+          this.triggerEvent("sx");
+        }
       }
       else{
         this.setData({myon: true})
@@ -198,12 +219,6 @@ Component({
         duration: 2000//持续的时间
       })
     }
-      /*console.log(this.data.option1[this.data.value1].text);
-      console.log(this.data.option2[this.data.value2].text);
-      console.log(this.data.time);
-      console.log(this.data.num);
-      console.log(this.data.grade);
-      console.log(this.data.more);*/
     },
     async judge(){
       const {data: res} = await wx.p.request({

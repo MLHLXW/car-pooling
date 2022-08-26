@@ -76,7 +76,6 @@ Page({
      },
     })
     this.setData({hlist: res});
-    console.log(this.data.hlist)
     for(var i = 0; i < this.data.hlist.length; i++){
       if(this.data.hlist[i].status=='ing'){this.selectComponent("#a"+i).begin(this.data.hlist[i].deadline)};
     }
@@ -106,7 +105,7 @@ Page({
     }
     else if(message == 'ing'){
       wx.navigateTo({
-        url: '/pages/datail/datail?id='+fid,
+        url: '/pages/detail/detail?id='+fid,
       })
     }
     else if(message == 'cancel'){
@@ -136,6 +135,7 @@ Page({
         index: 1
        })
     }
+    this.onLoad();
   },
 
   getUserProfile(e) {
@@ -158,5 +158,15 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onPullDownRefresh: function () {
+    wx.showNavigationBarLoading(); 
+        wx.showLoading({
+          title: '刷新中...',
+        })
+        this.onLoad();
+        wx.hideLoading();
+        wx.hideNavigationBarLoading();
+        wx.stopPullDownRefresh();
   }
 })

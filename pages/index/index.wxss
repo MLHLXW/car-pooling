@@ -42,7 +42,12 @@
 }
 .my-clock{
   position: absolute;
-  top: 40px;
-  left: 207px;
+  top: 80rpx;
+  left: 414rpx;
+}
+.zw1{
+  display: block;
+  width: 200px;
+  height: 200rpx;
 }
 

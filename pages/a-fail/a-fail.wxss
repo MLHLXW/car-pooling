@@ -1,7 +1,7 @@
 /* pages/a-fail/a-fail.wxss */
 page{
   /* 拼车失败（人不够） */
-width: 375px;
+width: 750rpx;
 height: 812px;
 background: rgb(196, 196, 196);
 }
@@ -22,7 +22,7 @@ text-align: left;
 .suc-t2{
     /* 福州机场 */
 position: absolute;
-width: 72px;
+width: 172px;
 height: 26px;
 top: 72px;
 left: 213px;
@@ -39,7 +39,7 @@ position: absolute;
 width: 257px;
 height: 26px;
 top: 110px;
-left: 84px;
+left: 140rpx;
 color: rgb(255, 255, 255);
 font-size: 16px;
 font-weight: 500;

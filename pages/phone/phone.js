@@ -8,7 +8,29 @@ Page({
     name: '',
     phone: '',
     yz: '',
-    list: {}
+    list: {},
+    isok: true,
+    timer: null,
+    djs: 60,
+  },
+  clock(){
+    const that = this; 
+    that.setData({
+      isok: false,
+      djs: 60
+    })
+    that.data.timer = setInterval(()=>{
+      if(that.data.djs >= 1){
+        that.setData({
+          djs: that.data.djs - 1
+        })
+      }else{
+        clearInterval(that.data.timer)
+        that.setData({
+          isok: true
+        })
+      }
+    },1000)
   },
 
   inputna(e){
@@ -34,6 +56,7 @@ Page({
 
   async send(){
     if(this.data.phone != ''){
+    this.clock();
     const {data: res} = await wx.p.request({
       method: 'POST',
       url: 'https://rrewuq.com/sendMessage',

@@ -12,6 +12,9 @@ Page({
   },
 
   async send(){
+    wx.showLoading({
+      title: '加载中',
+    });
     const {data: res} = await wx.p.request({
       method: 'POST',
       url: 'https://rrewuq.com/confirm',
@@ -21,12 +24,14 @@ Page({
       header: {
         'content-Type': 'application/x-www-form-urlencoded',
         'satoken':wx.getStorageSync("token")
-      }
+      },
     })
-    console.log(res);
-    wx.switchTab({
-      url: '/pages/index/index',
-    })
+    setTimeout(()=>{
+      wx.hideLoading()
+      wx.switchTab({
+        url: '/pages/index/index',
+      })
+    },2000)
   },
   /**
    * 生命周期函数--监听页面加载

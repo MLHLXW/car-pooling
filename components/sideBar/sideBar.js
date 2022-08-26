@@ -67,6 +67,7 @@ Component({
     },
     gob(){
       wx.setStorageSync('key', 0)
+      wx.setStorageSync('token', '')
     }
   }
 })
